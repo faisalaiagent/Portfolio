@@ -114,9 +114,9 @@ Add environment variables in your Vercel dashboard (see `.env.example`).
 ## 🔧 Environment Variables
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://yourportfolio.com
-NEXT_PUBLIC_WHATSAPP_NUMBER=+923100000000
-NEXT_PUBLIC_EMAIL=you@email.com
+NEXT_PUBLIC_SITE_URL=https://portfolio-shah-faisal.vercel.app/
+NEXT_PUBLIC_WHATSAPP_NUMBER=+923100122738
+NEXT_PUBLIC_EMAIL=faisalagentai@gmail.com
 ```
 
 ---
