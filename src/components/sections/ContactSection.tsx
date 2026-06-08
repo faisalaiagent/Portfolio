@@ -37,11 +37,28 @@ export function ContactSection() {
   } = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate API call — replace with your email service
-    await new Promise((r) => setTimeout(r, 1200));
-    console.log(data);
-    toast.success("Message sent! I'll get back to you within 24 hours.");
-    reset();
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: `Budget: ${data.budget || "Not specified"}\n\n${data.message}`,
+        }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        toast.success("Message sent! I'll get back to you within 24 hours.");
+        reset();
+      } else {
+        toast.error("Failed to send. Please try WhatsApp instead.");
+      }
+    } catch {
+      toast.error("Something went wrong. Please try WhatsApp instead.");
+    }
   };
 
   return (
@@ -89,7 +106,7 @@ export function ContactSection() {
             {/* Quick CTA buttons */}
             <div className="space-y-3">
               <a
-                href={siteConfig.whatsapp}
+                href={`${siteConfig.whatsapp}?text=Hi%20Shah%20Faisal!%20I%20visited%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-medium text-white transition-all hover:scale-[1.02]"

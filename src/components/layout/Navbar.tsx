@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/data";
 
@@ -85,14 +85,6 @@ export function Navbar() {
 
             {/* CTA */}
             <div className="hidden md:flex items-center gap-3">
-              <a
-                href="/resume.pdf"
-                download
-                className="btn-ghost text-xs px-4 py-2 flex items-center gap-1.5"
-              >
-                <Download size={13} />
-                Resume
-              </a>
               <button
                 onClick={() => scrollTo("#contact")}
                 className="btn-primary text-xs px-4 py-2"
