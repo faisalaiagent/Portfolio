@@ -106,7 +106,7 @@ export function ContactSection() {
             {/* Quick CTA buttons */}
             <div className="space-y-3">
               <a
-                href={`${siteConfig.whatsapp}?text=Hi%20Shah%20Faisal!%20I%20visited%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project.`}
+                href={`https://api.whatsapp.com/send?phone=923100122738&text=Hi%20Shah%20Faisal!%20I%20visited%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-medium text-white transition-all hover:scale-[1.02]"
