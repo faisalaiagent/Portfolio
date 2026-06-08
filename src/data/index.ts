@@ -10,10 +10,10 @@ export const siteConfig = {
   phone: "+92 310 0122738",
   location: "Karachi, Pakistan",
   whatsapp: "https://wa.me/923100122738",
-  calendly: "https://calendly.com/shahfaisal",
+  calendly: "https://calendly.com/faisalagentai/30min",
   github: "https://github.com/faisalaiagent",
   linkedin: "https://linkedin.com/in/shah-faisal-aiagent",
-  twitter: "https://twitter.com/shahfaisal",
+  twitter: "https://twitter.com/shahfaisalai",
   roles: [
     "AI Engineer",
     "Full Stack Developer",
