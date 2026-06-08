@@ -20,7 +20,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-  { icon: Phone, label: "WhatsApp", value: "+92 300 000 0000", href: siteConfig.whatsapp },
+  { icon: Phone, label: "WhatsApp", value: siteConfig.phone, href: siteConfig.whatsapp },
   { icon: MapPin, label: "Location", value: siteConfig.location, href: "#" },
 ];
 
