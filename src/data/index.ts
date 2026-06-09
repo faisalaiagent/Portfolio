@@ -149,19 +149,30 @@ export const services = [
 
 export const projects = [
   {
-    id: "resume-analyzer",
-    title: "Resume Analyzer AI",
+    id: "pharmalens",
+    title: "PharmaLens AI",
     description:
-      "Full-stack AI tool that analyzes resumes against job descriptions, provides ATS scoring, identifies skill gaps, and generates improvement suggestions using GPT-4.",
+      "AI-powered pharmaceutical intelligence platform that helps users analyze medicines, understand drug information, identify ingredients, and access healthcare insights through an intuitive interface.",
     longDescription:
-      "A production-grade AI SaaS platform helping job seekers optimize their resumes. Features real-time ATS compatibility scoring, AI-powered suggestions, and a beautiful dashboard.",
-    tags: ["Next.js", "OpenAI", "Python", "PostgreSQL", "Stripe"],
-    category: "AI",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+      "PharmaLens AI is a healthcare-focused AI application designed to simplify access to pharmaceutical information. The platform enables users to explore medication details, analyze drug compositions, understand usage guidelines, and obtain AI-assisted healthcare insights. Built with a modern SaaS architecture and user-friendly experience, PharmaLens combines artificial intelligence, data analysis, and healthcare intelligence to make pharmaceutical information more accessible for patients, healthcare professionals, and researchers.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "AI",
+      "Healthcare",
+      "Pharmaceutical",
+      "Medical AI",
+      "PostgreSQL",
+      "SaaS",
+      "Data Analytics",
+    ],
+    category: "HealthTech",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&q=80",
+    github: "https://github.com/faisalaiagent/Pharmalens",
+    demo: "https://pharmalens-shah.vercel.app/",
     featured: true,
-    color: "#A855F7",
+    color: "#0EA5E9",
   },
   {
     id: "ai-regex-studio",
