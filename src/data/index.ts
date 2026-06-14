@@ -221,7 +221,7 @@ export const projects = [
     ],
     category: "Creator Tools",
     image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&w=1200&q=80",
-    github: "",
+    github: "https://github.com/faisalaiagent/Creator-Hub",
     demo: "https://creatorhub-shah.vercel.app/",
     featured: true,
     color: "#EC4899",
