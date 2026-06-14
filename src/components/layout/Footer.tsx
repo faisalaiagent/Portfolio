@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, ArrowUp, Heart, Zap } from "lucide-react";
+import { Github, Linkedin, Twitter, ArrowUp, Heart } from "lucide-react";
 import { siteConfig } from "@/data";
 
 const navLinks = [
@@ -84,11 +84,9 @@ export function Footer() {
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
           <p className="text-white/20 text-xs flex items-center gap-1.5">
-            Built with
+            Built by
             <Heart size={10} className="text-red-400 fill-current" />
-            using
-            <Zap size={10} className="text-yellow-400" />
-            Next.js & AI
+            Shah Faisal Tech
           </p>
         </div>
       </div>

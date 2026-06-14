@@ -7,16 +7,10 @@ import { projects } from "@/data";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { staggerContainer, staggerItem } from "@/lib/utils";
 
-const categories = ["All", "AI", "Shopify", "Automation"];
-
 export function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null);
 
-  const filtered =
-    activeFilter === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeFilter);
+  const filtered = projects;
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden bg-[#050505]">
@@ -29,24 +23,6 @@ export function ProjectsSection() {
           highlight="Projects"
           description="Production-grade applications that generate real results for real businesses."
         />
-
-        {/* Filter tabs */}
-        <div className="flex items-center justify-center gap-2 flex-wrap">
-          {categories.map((cat) => (
-            <motion.button
-              key={cat}
-              onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                activeFilter === cat
-                  ? "bg-purple-600 text-white shadow-lg shadow-purple-600/30"
-                  : "glass text-white/50 hover:text-white"
-              }`}
-              whileTap={{ scale: 0.96 }}
-            >
-              {cat}
-            </motion.button>
-          ))}
-        </div>
 
         {/* Projects Grid */}
         <motion.div
